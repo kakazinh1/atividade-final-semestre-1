@@ -1,6 +1,54 @@
 {% extends "base.html" %}
 
 {% block conteudo %}
-	<h1>Bem vindo à Pizza Nossa!</h1>
-    <h2><a href="/base">Programação</a></h2>
+<div class="centro">
+<h1>Tour Pelo Japão</h1>
+<h2>Conheça as Províncias mais requisitas nos olhos dos turístas</h2>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <a href="/tokyo">
+  <div class="col">
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/tokyom.webp') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">東京</h5>
+        <p class="card-text">A Província mais popular do Japão</p>
+      </div>
+    </div>
+  </div>
+  </a>
+  <a href="/kyoto">
+  <div class="col">
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/kyotom.jpg') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">京都</h5>
+        <p class="card-text">A capital do Japão</p>
+      </div>
+    </div>
+  </div>
+  </a>
+      <a href="/osaka">
+  <div class="col">
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/osakam.webp') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">大阪</h5>
+        <p class="card-text">Uma das primeiras cidades construidas no civilização japonesa.</p>
+      </div>
+    </div>
+  </div>
+  </a>
+      <a href="/okinawa">
+  <div class="col">
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/okinawam.webp') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">沖縄</h5>
+        <p class="card-text">O Hawaí japonês, a ilha isolado do japão.</p>
+      </div>
+    </div>
+  </div>
+  </a>
+</div>
+</div>
 {% endblock %}

@@ -6,22 +6,16 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
   align-items: center;
   min-height: 100vh;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
   box-sizing: border-box;
   text-align: center; 
+
 }
-
-  p {
-    text-align: left;
-  }
-
-  h3 {
-    font-size: 100%;
-    text-align: justify;
-  }
-  /* ----------------------- Header ----------------------- */
+/* ----------------------- Header ----------------------- */
   header {
     justify-content: center;
     background: #fff;
@@ -40,3 +34,72 @@ body {
   .centro {
     padding-top: -50%;
   }
+/* ----------------------- Main ----------------------- */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1.25rem;  
+  box-sizing: border-box;
+}
+h1 {
+  padding-bottom: 5px;
+  color: red
+}
+h2 {
+  font-size:100%;
+  padding-bottom: 20px;
+}
+
+a {
+  color: inherit;        
+  text-decoration: none; 
+}
+
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* ----------------------- Carousel ----------------------- */
+#carouselExampleCaptions .carousel-item {
+  height: 600px;       
+  overflow: hidden;    
+}
+
+#carouselExampleCaptions .carousel-item img {
+  width: 100% !important;   
+  height: 100% !important;  
+  object-fit: cover;        
+  object-position: center;  
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) !important;
+}
+
+
+#carouselExampleCaptions .carousel-caption {
+  position: absolute;          
+  bottom: 20px;                
+  left: 50%;                   
+  transform: translateX(-50%); 
+  width: 60%;                  
+  padding: 1rem;             
+  box-sizing: border-box;
+}
+
+#carouselExampleCaptions .carousel-caption {
+  background: rgba(0, 0, 0, 0.4);  
+  color: #fff;                    
+  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+  border-radius: 0.25rem;
+}
+
+#carouselExampleCaptions .carousel-caption.d-none {
+  display: block !important;
+}
