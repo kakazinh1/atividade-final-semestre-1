@@ -103,3 +103,9 @@ a:focus {
 #carouselExampleCaptions .carousel-caption.d-none {
   display: block !important;
 }
+
+.card-img-top {
+  height: 500px;     
+  object-fit: cover;
+  width: 100%;
+}
